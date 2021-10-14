@@ -1,79 +1,33 @@
-# FlashCards Starter Kit
+# Console Trivia - Flashcard Simulation
 
-## Fork This Repo
+Turing School of Software & Design
+2108 FEE, Module 2 - Solo Project
 
-On the top right corner of this page, click the **Fork** button.
+## Abstract
+A web app that allows users to play a game of trivia in the console. Questions are related to Javascript. Each question displays with multiple choice answers. After cycling through all questions, users will be able to see what percentage they answered correctly.
 
-## Setup
+## Languages/Technology
+Javascript, Mocha, Chai, Github
 
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
+## Learning Goals
+* Gain familiarity with writing object-oriented code using ES6 classes
+* Build a project with modular, reusable code that follows SRP
+* Implement a robust testing suite using TDD, writing own tests from scratch
 
-```bash
-git clone [remote-address] [what you want to name the repo]
-```
+## Trello Project Board
+[Here](https://trello.com/b/zRiyr72a/flashcards-m2-solo)
 
-Once you have cloned the repo, change into the directory and install the library dependencies. Run:
+## Install & Setup 
+* Using your command line interface, clone this repo down to your machine
+* `cd` into the directory
+* Run `node index.js`
+* Once complete, use the control + c keyboard shortcut to exit the Node server
 
-```bash
-npm install
-```
+## Web App Attributes
+* To get the game started, users will run `node index.js` and be greeted with the first question.
 
-To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
+* Users can type 1, 2, or 3 into the `Answer:`section. Typing in anything other than those numbers will cause an error that will read `Please enter a valid index` so that they can try again.
 
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
+* Users can also use the up/down arrows to cycle through the 2 different options. Once selected or typed in, pressing the Enter key will provide feedback on whether they guessed correctly or incorrectly. Pressing enter again will display the next question.
 
-```bash
-Node server running on port 3000
-```
-
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
-
-
-## Where to Add Your Code
-
-### JavaScript
-
-**Create all of your feature code files in the `src` directory.**
-
-We will be using the `module.exports` and `require` syntax to share code across files.
-
-## How to View Your Code in Action
-
-Once you are working through Iteration 3, you will want to start your server to test your functionality.
-In the terminal, run:
-
-```bash
-node index.js
-```
-
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
-
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
-
----
-
-## Test Files Organization
-
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
-
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
-
-## Running Your Tests
-
-Run your test suite using the command:
-
-```bash
-npm test
-```
-
-The test results will output to the terminal.
-
----
-
-## Linting Your Code
-
-Run the command in your terminal `npm run lint` to run the linter on your JavaScript code. There will be errors and warnings right from the start in this starter kit - the linter is still running successfully.
-
-Your linter will look at the JavaScript files you have within the `src` directory and the `test` directory. 
-
----
+* After moving through all 30 questions, a message displays that the round is over. It also tells the user what percentage of questions they answered correctly. Typing control + c will exit the Node server.
